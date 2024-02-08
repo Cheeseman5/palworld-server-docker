@@ -1,7 +1,7 @@
 ---
 services:
   palworld:
-    image: thijsvanloef/palworld-server-docker:latest
+    image: cheeseman5/palworld-server-docker:latest
     restart: unless-stopped
     container_name: palworld-server
     stop_grace_period: 30s  # Set to however long you are willing to wait for the container to gracefully stop
@@ -18,9 +18,9 @@ services:
       - RCON_ENABLED=true
       - RCON_PORT=25575
       - TZ=UTC
-      - ADMIN_PASSWORD=adminPasswordHere
+      - ADMIN_PASSWORD=Nov252008
       - COMMUNITY=false  # Enable this if you want your server to show up in the community servers tab, USE WITH SERVER_PASSWORD!
-      - SERVER_NAME=World of Pals
+      - SERVER_NAME=AmbiguiouslyLameSweatshop
       - SERVER_DESCRIPTION=palworld-server-docker by Thijs van Loef
     volumes:
       - ./palworld:/palworld/
