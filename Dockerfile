@@ -1,10 +1,10 @@
 FROM cm2network/steamcmd:root
-LABEL maintainer="thijs@loef.dev" \
-      name="thijsvanloef/palworld-server-docker" \
-      github="https://github.com/thijsvanloef/palworld-server-docker" \
+LABEL maintainer="dave" \
+      name="Cheeseman5/palworld-server-docker" \
+      github="https://github.com/cheeseman5/palworld-server-docker" \
       dockerhub="https://hub.docker.com/r/thijsvanloef/palworld-server-docker" \
-      org.opencontainers.image.authors="Thijs van Loef" \
-      org.opencontainers.image.source="https://github.com/thijsvanloef/palworld-server-docker"
+      org.opencontainers.image.authors="Dave" \
+      org.opencontainers.image.source="https://github.com/cheeseman5/palworld-server-docker"
 
 # update and install dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
